@@ -45,6 +45,7 @@ Widget customString({
     ),
   );
 }
+
 Widget customontainerGender({
   required String text_gender,
   required Color colorText,
@@ -123,7 +124,7 @@ class _customcardSetValueState extends State<customcardSetValue> {
     setState(() {
       value = newValue;
     });
-    widget.onValueChanged(value); // نرجع القيمة الجديدة
+    widget.onValueChanged(value);
   }
 
   @override
@@ -183,9 +184,7 @@ class _customcardSetValueState extends State<customcardSetValue> {
 
   Widget _buildIconButton(IconData icon, VoidCallback onPressed) {
     return Card(
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(30),
-      ),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
       elevation: 3,
       margin: const EdgeInsets.all(5),
       child: Container(
@@ -203,7 +202,6 @@ class _customcardSetValueState extends State<customcardSetValue> {
       ),
     );
   }
-
 }
 
 class CustomButtom extends StatelessWidget {

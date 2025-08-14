@@ -14,13 +14,13 @@ class _Home2State extends State<Home2> {
   int weight = 0;
   int age = 0;
   int height = 0;
-  late String gender; // هنخزن النوع هنا
+  late String gender; 
 
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
     final args = ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>;
-    gender = args['gender']; // استلام النوع من Screen1
+    gender = args['gender'];
   }
 
   @override

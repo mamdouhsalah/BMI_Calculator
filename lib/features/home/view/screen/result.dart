@@ -31,7 +31,6 @@ class _Home3State extends State<Home3> {
 
       bmi = height > 0 ? weight / ((height / 100) * (height / 100)) : 0;
     } else {
-      // fallback values in case arguments are null
       weight = 0;
       height = 0;
       age = 0;
